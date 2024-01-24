@@ -1,0 +1,10 @@
+.dispCuadrada{
+  display: flex;
+  height: 200px;
+  width: 200px;
+}
+
+.dispHorizontal{
+  height: auto;
+  width: 500px;
+}
