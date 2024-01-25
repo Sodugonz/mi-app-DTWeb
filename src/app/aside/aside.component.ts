@@ -30,7 +30,13 @@ export class AsideComponent {
     tarjetaCuadrada: true,
   }
 
-
+  campos = {
+    switch1: true,
+    switch2: true,
+    switch3: true,
+    switch4: true,
+    switch5: true,
+}
 
   constructor() {
   }
