@@ -76,11 +76,7 @@ export class AsideComponent {
     }
   }
 
-  clic() {
-    this.cambiar = !this.cambiar;
-  }
 }
-
 
 
 
