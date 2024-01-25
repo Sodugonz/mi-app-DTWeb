@@ -27,21 +27,17 @@ export class AsideComponent {
     color1: '#ffffff',
     color2: '#f0f0f0',
     color3: '#212529',
+    tarjetaCuadrada: true,
   }
 
-  opcionesImagen = [
-    { id: 'imagenRadio1', etiqueta: 'Horizontal' },
-    { id: 'imagenRadio2', etiqueta: 'Vertical' },
-    { id: 'imagenRadio3', etiqueta: 'Cuadrada' }
-  ];
 
 
   constructor() {
   }
 
-  pulsado($event) {
+
+  pulsado() {
     this.escondido = !this.escondido;
-    console.log('Mi evento', $event);
   }
 
   tabSelect(tab: string) {
