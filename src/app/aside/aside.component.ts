@@ -29,6 +29,8 @@ export class AsideComponent {
     color3: '#212529',
     tarjetaCuadrada: true,
     imagenRedonda : false,
+    dispHorizontal: true,
+    dispCuadrada: false,
   }
 
   campos = {
@@ -50,6 +52,9 @@ export class AsideComponent {
 
   formaImagen(valor){
     this.estilo.imagenRedonda = valor;
+  }
+  formaTarjeta(valor) {
+    this.estilo.dispCuadrada = valor;
   }
 
   pulsado() {
