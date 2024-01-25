@@ -30,6 +30,18 @@ export class AsideComponent {
     tarjetaCuadrada: true,
   }
 
+  campos = {
+    cambiar1: true,
+    cambiar2: true,
+    cambiar3: true,
+    cambiar4: true,
+    cambiar5: true,
+    cambiar6: true,
+    cambiar7: true,
+    cambiar8: true,
+    cambiar9: true,
+    cambiar10: true,
+  }
 
 
   constructor() {
@@ -64,6 +76,9 @@ export class AsideComponent {
     }
   }
 
+  clic() {
+    this.cambiar = !this.cambiar;
+  }
 }
 
 
