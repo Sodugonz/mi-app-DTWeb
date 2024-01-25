@@ -27,13 +27,14 @@ export class AsideComponent {
     color1: '#ffffff',
     color2: '#f0f0f0',
     color3: '#212529',
-    formaTarjeta: '2 / 1',
+    tarjetaCuadrada: true,
   }
 
 
 
   constructor() {
   }
+
 
   pulsado() {
     this.escondido = !this.escondido;

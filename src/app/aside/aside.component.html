@@ -148,7 +148,7 @@
               </label>
             </div>
             <div class="form-check ">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="shapeRadio2">
+              <input class="form-check-input" type="radio" name="shapeRadio" id="shapeRadio2">
               <label class="form-check-label" for="shapeRadio2">
                 Redonda
               </label>
@@ -204,31 +204,37 @@
             <input type="text" class="form-control" id="inputNombre" placeholder="Nombre" [(ngModel)]="persona.nombre">
             <label>Nombre</label>
           </div>
-          <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="inputMail" placeholder="Correo Electrónico"
-                   [(ngModel)]="persona.mail">
-            <label>Correo Electrónico</label>
-          </div>
+
           <div class="form-floating mb-3">
             <input type="text" class="form-control" id="inputWork" placeholder="Profesión"
                    [(ngModel)]="persona.profesion">
             <label>Profesión</label>
           </div>
+
           <div class="form-floating mb-3">
-            <input type="text" class="form-control" id="inputWPlace" placeholder="Correo Electrónico"
-                   [(ngModel)]="persona.empresa">
-            <label>Empresa</label>
+            <input type="email" class="form-control" id="inputMail" placeholder="Correo Electrónico"
+                   [(ngModel)]="persona.mail">
+            <label>Correo Electrónico</label>
           </div>
-          <div class="form-floating mb-3">
-            <input type="text" class="form-control" id="inputStreet" placeholder="Correo Electrónico"
-                   [(ngModel)]="persona.web">
-            <label>Dirección</label>
-          </div>
+
           <div class="form-floating mb-3">
             <input type="text" class="form-control" id="inputMovil" placeholder="Correo Electrónico"
                    [(ngModel)]="persona.movil">
             <label>Móvil</label>
           </div>
+
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="inputWPlace" placeholder="Correo Electrónico"
+                   [(ngModel)]="persona.empresa">
+            <label>Empresa</label>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="inputStreet" placeholder="Correo Electrónico"
+                   [(ngModel)]="persona.web">
+            <label>Dirección</label>
+          </div>
+
 
         </div>
 
@@ -237,27 +243,29 @@
 
           <h5>Comparte tus redes sociales</h5>
 
-          <div class="form-floating mb-3 mt-3">
-            <input type="email" class="form-control" id="inputLinkedin" placeholder="Linkedin">
-            <label for="floatingInput">LinkedIn</label>
-          </div>
-          <div class="form-floating mb-3">
-            <input type="text" class="form-control" id="inputInstagram" placeholder="Instagram">
-            <label>Instagram</label>
-          </div>
           <div class="form-floating mb-3">
             <input type="text" class="form-control" id="inputFacebook" placeholder="Facebook"
                    [(ngModel)]="social.facebook">
             <label>Facebook</label>
           </div>
+
+          <div class="form-floating mb-3 mt-3">
+            <input type="email" class="form-control" id="inputLinkedin" placeholder="Linkedin">
+            <label for="floatingInput">LinkedIn</label>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="inputInstagram" placeholder="Instagram">
+            <label>Instagram</label>
+          </div>
+
+
           <div class="form-floating mb-3">
             <input type="text" class="form-control" id="inputYouTube" placeholder="YouTube">
             <label>YouTube</label>
           </div>
-          <div class="form-floating mb-3">
-            <input type="text" class="form-control" id="inputTikTok" placeholder="TikTok">
-            <label>TikTok</label>
-          </div>
+
+
         </div>
 
 
