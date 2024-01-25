@@ -24,3 +24,7 @@
 body{
   background-color: var(--body);
 }
+
+.general {
+  background-color: whitesmoke;
+}
