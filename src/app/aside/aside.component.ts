@@ -28,6 +28,7 @@ export class AsideComponent {
     color2: '#f0f0f0',
     color3: '#212529',
     tarjetaCuadrada: true,
+    imagenRedonda : false,
   }
 
   campos = {
@@ -47,6 +48,9 @@ export class AsideComponent {
   constructor() {
   }
 
+  formaImagen(valor){
+    this.estilo.imagenRedonda = valor;
+  }
 
   pulsado() {
     this.escondido = !this.escondido;
