@@ -32,21 +32,21 @@
         <div class="row">
           <div class="col-4"><img src="https://placehold.co/200x200" class="rounded img-fluid"></div>
           <div class="col-8">
-            <p class="h2" [style.color]="estilo.color1" *ngIf="campos.cambiar1">{{persona.nombre}}</p>
-            <p class="h6" [style.color]="estilo.color2" *ngIf="campos.cambiar2">{{persona.profesion}}</p>
-            <div class="text-light" [style.color]="estilo.color2" *ngIf="campos.cambiar3">{{persona.mail}}</div>
-            <div class="text-light" [style.color]="estilo.color2" *ngIf="campos.cambiar4">{{persona.movil}}</div>
+            <p class="h2" [style.color]="estilo.color1">{{persona.nombre}}</p>
+            <p class="h6" [style.color]="estilo.color2" *ngIf="campos.profesion">{{persona.profesion}}</p>
+            <div class="text-light" [style.color]="estilo.color2" *ngIf="campos.email">{{persona.mail}}</div>
+            <div class="text-light" [style.color]="estilo.color2" *ngIf="campos.movil">{{persona.movil}}</div>
           </div>
         </div>
         <!--        Información extra      -->
         <div class="row pt-3">
-          <div class="col" *ngIf="campos.cambiar5">{{persona.empresa}}</div>
-          <div class="col" *ngIf="campos.cambiar6">{{persona.web}}</div>
+          <div class="col" *ngIf="campos.empresa">{{persona.empresa}}</div>
+          <div class="col" *ngIf="campos.web">{{persona.web}}</div>
         </div>
 
         <!--        Información social      -->
         <div class="row pt-3">
-          <div class="col" *ngIf="campos.cambiar7">
+          <div class="col" *ngIf="campos.facebook">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                  class="bi bi-facebook me-2"
                  viewBox="0 0 16 16">
@@ -55,7 +55,7 @@
             </svg>
             <small>{{social.facebook}}</small>
           </div>
-          <div class="col" *ngIf="campos.cambiar8">
+          <div class="col" *ngIf="campos.twitter">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                  class="bi bi-twitter me-2"
                  viewBox="0 0 16 16">
@@ -64,7 +64,7 @@
             </svg>
             <small>{{social.twitter}}</small>
           </div>
-          <div class="col" *ngIf="campos.cambiar9">
+          <div class="col" *ngIf="campos.instagram">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                  class="bi bi-instagram me-2"
                  viewBox="0 0 16 16">
@@ -73,7 +73,7 @@
             </svg>
             <small>{{social.instagram}}</small>
           </div>
-          <div class="col" *ngIf="campos.cambiar10">
+          <div class="col" *ngIf="campos.linkedin">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                  class="bi bi-linkedin me-2"
                  viewBox="0 0 16 16">
@@ -111,7 +111,7 @@
 
 
         <!--        Estilo      -->
-        <div class="col py-5 px-5 border border-top-0" *ngSwitchCase="1" id="divEstilo">
+        <div class="col py-5 px-5" *ngSwitchCase="1" id="divEstilo">
           <h5>Dale tu toque personal</h5>
 
 
@@ -174,25 +174,25 @@
         </div>
 
         <!--        Opciones      -->
-        <div class="col py-5 px-5 border border-top-0" *ngSwitchCase="2" id="divOpciones">
-          <h5>Placeholder opciones</h5>
+        <div class="col py-5 px-5" *ngSwitchCase="2" id="divOpciones">
+          <h5>Elige lo que quieras que aparezca</h5>
 
           <div class="pt-3">
             <h6>Datos de contacto</h6>
             <div class="form-check form-switch">
-              <input class="form-check-input" type="checkbox" [(ngModel)]="campos.cambiar1">
+              <input class="form-check-input" type="checkbox" [(ngModel)]="campos.profesion">
               <label class="form-check-label">
                 Profesión
               </label>
             </div>
             <div class="form-check form-switch">
-              <input class="form-check-input" type="checkbox" [(ngModel)]="campos.cambiar2">
+              <input class="form-check-input" type="checkbox" [(ngModel)]="campos.email">
               <label class="form-check-label">
                 Correo Electrónico
               </label>
             </div>
             <div class="form-check  form-switch">
-              <input class="form-check-input" type="checkbox" [(ngModel)]="campos.cambiar3">
+              <input class="form-check-input" type="checkbox" [(ngModel)]="campos.movil">
               <label class="form-check-label">
                 Móvil
               </label>
@@ -201,46 +201,46 @@
           <div class="pt-3">
             <h6>Otros</h6>
             <div class="form-check  form-switch">
-              <input class="form-check-input" type="checkbox" [(ngModel)]="campos.cambiar4">
+              <input class="form-check-input" type="checkbox" [(ngModel)]="campos.empresa">
               <label class="form-check-label">
                 Empresa
               </label>
             </div>
             <div class="form-check  form-switch">
-              <input class="form-check-input" type="checkbox" [(ngModel)]="campos.cambiar5">
+              <input class="form-check-input" type="checkbox" [(ngModel)]="campos.web">
               <label class="form-check-label">
-                Dirección
+                Dirección web
               </label>
             </div>
           </div>
           <div class="pt-3">
             <h6>Redes sociales</h6>
             <div class="form-check  form-switch">
-              <input class="form-check-input" type="checkbox" [(ngModel)]="campos.cambiar6">
+              <input class="form-check-input" type="checkbox" [(ngModel)]="campos.facebook">
               <label class="form-check-label">
                 Facebook
               </label>
             </div>
             <div class="form-check  form-switch">
-              <input class="form-check-input" type="checkbox" [(ngModel)]="campos.cambiar7">
+              <input class="form-check-input" type="checkbox" [(ngModel)]="campos.twitter">
               <label class="form-check-label">
                 Twitter
               </label>
             </div>
             <div class="form-check  form-switch">
-              <input class="form-check-input" type="checkbox" [(ngModel)]="campos.cambiar8">
+              <input class="form-check-input" type="checkbox" [(ngModel)]="campos.linkedin">
               <label class="form-check-label">
                 LinkedIn
               </label>
             </div>
             <div class="form-check form-switch ">
-              <input class="form-check-input" type="checkbox" [(ngModel)]="campos.cambiar9">
+              <input class="form-check-input" type="checkbox" [(ngModel)]="campos.instagram">
               <label class="form-check-label">
                 Instagram
               </label>
             </div>
             <div class="form-check  form-switch">
-              <input class="form-check-input" type="checkbox" [(ngModel)]="campos.cambiar10">
+              <input class="form-check-input" type="checkbox" [(ngModel)]="campos.youtube">
               <label class="form-check-label">
                 YouTube
               </label>
@@ -252,11 +252,11 @@
         </div>
 
         <!--        Información básica      -->
-        <div class="col py-5 px-5 border border-top-0" *ngSwitchCase="3" id="divInfo">
+        <div class="col py-5 px-5" *ngSwitchCase="3" id="divInfo">
 
-          <h5>Información básica</h5>
+          <h5 class="mb-3">Información básica</h5>
 
-          <div class="form-floating my-3">
+          <div class="form-floating my-3 ">
             <input type="text" class="form-control" id="inputNombre" placeholder="Nombre" [(ngModel)]="persona.nombre">
             <label>Nombre</label>
           </div>
@@ -295,7 +295,7 @@
         </div>
 
         <!--        Social      -->
-        <div class="col py-5 px-5 border border-top-0 text-" *ngSwitchCase="4" id="divSocial">
+        <div class="col py-5 px-5 text-" *ngSwitchCase="4" id="divSocial">
 
           <h5>Comparte tus redes sociales</h5>
 
