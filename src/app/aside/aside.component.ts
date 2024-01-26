@@ -70,6 +70,10 @@ export class AsideComponent {
     this.escondido = !this.escondido;
   }
 
+  onMouseEnter() {
+    console.log('Personas interesadas')
+  }
+
   tabSelect(tab: string) {
     switch (tab) {
       case 'estilo':
