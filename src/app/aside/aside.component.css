@@ -9,3 +9,30 @@
   aspect-ratio : 2 / 1;
   width: 500px;
 }
+
+.derecha{
+  background-color: antiquewhite;
+}
+
+/*.titulo{*/
+/*  color: black;*/
+/*}*/
+
+/*.subtitulo{*/
+/*  color: black;*/
+/*}*/
+
+.antique{
+  color: antiquewhite;
+}
+
+.btn{
+  background-color: antiquewhite;
+  color: black;
+  border: none;
+}
+
+.btn:hover{
+  background-color: black;
+  color: antiquewhite;
+}
