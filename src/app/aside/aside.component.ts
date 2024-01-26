@@ -27,8 +27,8 @@ export class AsideComponent {
     color1: '#ffffff',
     color2: '#f0f0f0',
     color3: '#212529',
-    tarjetaCuadrada: true,
-    imagenRedonda : false,
+    formaTarjeta: 'horizontal',
+    imagenRedonda: false,
   }
 
   campos = {
@@ -41,15 +41,29 @@ export class AsideComponent {
     linkedin: true,
     instagram: true,
     youtube: true,
-    web:true,
+    web: true,
   }
 
 
   constructor() {
   }
 
-  formaImagen(valor){
+  formaImagen(valor) {
     this.estilo.imagenRedonda = valor;
+  }
+
+  formaTarjeta() {
+    switch (this.estilo.formaTarjeta) {
+      case 'cuadrada':
+        return {'aspect-ratio': '1/1'};
+        break;
+      case 'vertical':
+        return {'aspect-ratio': '1/2'};
+        break;
+      case 'horizontal':
+        return {'aspect-ratio': '2/1'};
+        break;
+    }
   }
 
   pulsado() {

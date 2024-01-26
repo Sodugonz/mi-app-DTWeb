@@ -1,13 +1,14 @@
 .dispCuadrada{
-  display: flex;
-  height: auto;
+  width:500px;
   aspect-ratio : 1 / 1;
+  height: auto;
 }
 
 .dispHorizontal{
-  height: auto;
+
   aspect-ratio : 2 / 1;
   width: 500px;
+  height: auto;
 }
 
 .derecha{
